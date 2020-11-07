@@ -4,5 +4,7 @@ from .models import Category
 
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
-        model = Category # Model to be serialized
-        fields = ('name', 'description') # Fields to be serialized
+        # Model to be serialized
+        model = Category
+        # Fields to be serialized 
+        fields = ('name', 'description') 
