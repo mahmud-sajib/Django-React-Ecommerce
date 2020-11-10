@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'api',
     'api.category',
     'api.product',
+    'api.user',
 ]
 
 MIDDLEWARE = [
@@ -131,6 +132,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
 # URL that handles the media files served from MEDIA_ROOT. 
 MEDIA_URL = '/images/'
+
+AUTH_USER_MODEL = "user.CustomUser"
 
 # Cors header config:
 CORS_ALLOW_ALL_ORIGINS = True
